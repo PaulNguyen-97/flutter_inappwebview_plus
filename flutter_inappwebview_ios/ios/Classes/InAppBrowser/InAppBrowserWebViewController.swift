@@ -263,6 +263,7 @@ public class InAppBrowserWebViewController: UIViewController, InAppBrowserDelega
         if let browserSettings = browserSettings {
             if !browserSettings.hideToolbarTop {
                 navigationController?.navigationBar.isHidden = false
+                searchBar.isUserInteractionEnabled = false
                 if browserSettings.hideUrlBar {
                     searchBar.isHidden = true
                 }
